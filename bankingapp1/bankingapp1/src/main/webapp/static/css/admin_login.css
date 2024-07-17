@@ -1,0 +1,90 @@
+/* POPPINS FONT */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== COLOR VARIABLES ===== */
+:root {
+    --primary-color: #6657f4;
+    --second-color: #ffffff;
+    --black-color: #000000;
+}
+
+/* ===== BODY ===== */
+body {
+    background: #9a90f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* ===== Reusable CSS ===== */
+a {
+    text-decoration: none;
+    color: var(--second-color);
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    width: 400px;
+    padding: 2em;
+    background-color: var(--second-color);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 1.5em;
+    color: var(--primary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5em;
+    text-align: left;
+    color: var(--primary-color);
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1.5em;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #1d0db2;
+}
+
+.btn {
+    padding: 0.75em;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 10px;
+    color: var(--second-color);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #1d0db2;
+}
